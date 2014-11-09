@@ -5,21 +5,21 @@
               
               {{#post}}
               <article class="{{post_class}} post">
-                <a class="btn" href="{{@blog.url}}" title="Back to homepage">&laquo; Back to home</a>
+                <a class="btn" href="{{@blog.url}}" title="Accueil">&laquo; Accueil</a>
                 <h1><a href="{{url}}" title="{{title}}">{{title}}</a></h1>
-                <footer class="post-info">Posted on <span class="post-meta"><time datetime="{{date published_at format="YYYY-MM-DD"}}">{{date published_at format="Do MMMM YYYY"}}</time> {{tags separator=", " prefix="Tagged in "}}</span></footer>
+                <footer class="post-info">Publi%C3%A9 le <span class="post-meta"><time datetime="{{date published_at format="DD-MM-YYYY"}}">{{date published_at format="Do MMMM YYYY"}}</time> {{tags separator=", " prefix="Tagged in "}}</span></footer>
                 
                 {{content}}
                 
                 <ul class="share-buttons">
                     <li>Share this article:</li>
                     <li><a class="icon-facebook-squared" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
-                        onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook"></a></li>
+                        onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Partager sur Facebook"></a></li>
                     <li><a class="icon-twitter"  href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}"
-                        onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Tweet this page"></a></li>
+                        onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Tweeter cette page"></a></li>
                     <li><a class="icon-gplus"  href="https://plus.google.com/share?url={{url absolute="true"}}"
-                       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Share on Google+"></a></li>
-                    <li><a class="icon-linkedin"  href="https://www.linkedin.com/shareArticle?mini=true&url={{url absolute="true"}}&title={{encode title}}" onclick="window.open(this.href, 'linkedin-share', 'width=600,height=494');return false;" title="Share on LinkenIn"></a></li>
+                       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Partager sur Google+"></a></li>
+                    <li><a class="icon-linkedin"  href="https://www.linkedin.com/shareArticle?mini=true&url={{url absolute="true"}}&title={{encode title}}" onclick="window.open(this.href, 'linkedin-share', 'width=600,height=494');return false;" title="Partager sur LinkenIn"></a></li>
                 </ul>
                 
               </article>
@@ -27,7 +27,7 @@
                 <h3>Comments</h3>
                   <div id="disqus_thread"></div>
                   <script type="text/javascript">
-                      var disqus_shortname = 'USERNAME'; 
+                      var disqus_shortname = 'changeofscenery'; 
                       var disqus_title = '{{title}}';
                       var disqus_url = '{{url absolute="true"}}';
 
@@ -46,12 +46,12 @@
           <aside class="author">
             
             <img class="profile-image" src="{{asset "img/profile-image.jpg"}}" alt="" />
-            <p class="name">by <strong>Raphael Riegger</strong></p>
-            <p class="address">Sydney, Australia</p>
-            <p class="link"><a href="http://rriegger.com" title="Raphael Riegger - UI/UX Designer">rriegger.com</a></p>
+            <p class="name">by <strong>Romain Nicault</strong></p>
+            <p class="address">Paris, France</p>
+            <p class="link"><a href="http://romain.nicault.fr" title="Romain Nicault">romain.nicault.fr</a></p>
 
             <ul class="social">
-              <li><a class="icon-twitter" href="http://twitter.com/rriegger" title="Follow me on Twitter"></a></li>
+              <li><a class="icon-twitter" href="http://twitter.com/RomainNicault" title="Twitter"></a></li>
               <li><a class="icon-dribbble" href="https://dribbble.com/rriegger" title="See what I'm working on Dribbble"></a></li>
               <li><a class="icon-behance" href="https://www.behance.net/rriegger" title="Check out my work on Behance"></a></li>
             </ul>

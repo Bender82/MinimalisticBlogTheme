@@ -10,7 +10,7 @@
               {{#foreach posts}}  
               <article class="{{post_class}} post">
                 <h2><a href="{{url}}" title="{{title}}">{{title}}</a></h2>
-                <footer class="post-info">Posted on <span class="post-meta"><time datetime="{{date published_at format="DD-MM-YYYY"}}">{{date published_at format="Do MMMM YYYY"}}</time> {{tags separator=", " prefix="Tagged in "}}</span></footer>
+                <footer class="post-info">Publi%C3%A9 le <span class="post-meta"><time datetime="{{date published_at format="DD-MM-YYYY"}}">{{date published_at format="Do MMMM YYYY"}}</time> {{tags separator=", " prefix="Tagged in "}}</span></footer>
                 
                 <p>{{excerpt characters="600"}}&hellip;</p>
                 
@@ -24,12 +24,12 @@
           <aside class="author">
             <a class="btn" href="{{@blog.url}}" title="Accueil">&laquo; Accueil</a>
             <img class="profile-image" src="{{asset "img/profile-image.jpg"}}" alt="" />
-            <p class="name">by <strong>Raphael Riegger</strong></p>
-            <p class="address">Sydney, Australia</p>
-            <p class="link"><a href="http://rriegger.com" title="Raphael Riegger - UI/UX Designer">rriegger.com</a></p>
+            <p class="name">by <strong>Romain Nicault</strong></p>
+            <p class="address">Paris, France</p>
+            <p class="link"><a href="http://romain.nicault.fr" title="Romain Nicault">romain.nicault.fr</a></p>
 
             <ul class="social">
-              <li><a class="icon-twitter" href="http://twitter.com/rriegger" title="Follow me on Twitter"></a></li>
+              <li><a class="icon-twitter" href="http://twitter.com/RomainNicault" title="Twitter"></a></li>
               <li><a class="icon-dribbble" href="https://dribbble.com/rriegger" title="See what I'm working on Dribbble"></a></li>
               <li><a class="icon-behance" href="https://www.behance.net/rriegger" title="Check out my work on Behance"></a></li>
             </ul>
