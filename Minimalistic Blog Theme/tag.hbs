@@ -10,11 +10,11 @@
               {{#foreach posts}}  
               <article class="{{post_class}} post">
                 <h2><a href="{{url}}" title="{{title}}">{{title}}</a></h2>
-                <footer class="post-info">Posted on <span class="post-meta"><time datetime="{{date published_at format="YYYY-MM-DD"}}">{{date published_at format="Do MMMM YYYY"}}</time> {{tags separator=", " prefix="Tagged in "}}</span></footer>
+                <footer class="post-info">Posted on <span class="post-meta"><time datetime="{{date published_at format="DD-MM-YYYY"}}">{{date published_at format="Do MMMM YYYY"}}</time> {{tags separator=", " prefix="Tagged in "}}</span></footer>
                 
                 <p>{{excerpt characters="600"}}&hellip;</p>
                 
-                <a href="{{url}}" title="{{title}}">Read more &raquo;</a>
+                <a href="{{url}}" title="{{title}}">Plus &raquo;</a>
               </article>
               {{/foreach}}
 
@@ -22,7 +22,7 @@
              
           </main>
           <aside class="author">
-            <a class="btn" href="{{@blog.url}}" title="Back to homepage">&laquo; Back to home</a>
+            <a class="btn" href="{{@blog.url}}" title="Accueil">&laquo; Accueil</a>
             <img class="profile-image" src="{{asset "img/profile-image.jpg"}}" alt="" />
             <p class="name">by <strong>Raphael Riegger</strong></p>
             <p class="address">Sydney, Australia</p>
